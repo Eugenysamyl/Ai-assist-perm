@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI-администратор в Перми — Telegram для записи клиентов</title>
+  <style>
+    :root{
+      --bg:#07101f;
+      --bg2:#0b1730;
+      --card:#0d1729;
+      --line:#20304d;
+      --text:#f8fafc;
+      --muted:#9fb1c8;
+      --accent:#4ade80;
+      --accent2:#22c55e;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:radial-gradient(circle at top, #0f2547 0%, var(--bg) 45%, #050b16 100%);
+      color:var(--text);
+      line-height:1.5;
+    }
+    .wrap{max-width:1140px;margin:0 auto;padding:24px 20px 60px}
+    .topbar{
+      display:flex;justify-content:space-between;align-items:center;gap:12px;
+      padding:14px 18px;border:1px solid var(--line);border-radius:16px;background:rgba(10,18,35,.75);backdrop-filter:blur(8px);
+      position:sticky;top:12px;z-index:5;
+    }
+    .brand{font-weight:800;letter-spacing:.2px}
+    .brand span{color:var(--accent)}
+    .mini{color:var(--muted);font-size:14px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      background:linear-gradient(90deg,var(--accent),var(--accent2));color:#04220f;
+      padding:16px 22px;border-radius:14px;text-decoration:none;font-weight:800;border:none;
+      box-shadow:0 12px 30px rgba(34,197,94,.18);
+    }
+    .btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line);box-shadow:none}
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;padding:64px 0 32px}
+    h1{font-size:56px;line-height:1.02;margin:0 0 18px}
+    h1 span{color:var(--accent)}
+    h2{font-size:34px;margin:0 0 18px}
+    p{color:#d5deea;font-size:18px;margin:0 0 14px}
+    .muted{color:var(--muted)}
+    .hero-badges,.chips{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 20px}
+    .chip,.badge{
+      padding:10px 14px;border-radius:999px;border:1px solid var(--line);
+      background:rgba(10,18,35,.7);color:#dce7f4;font-size:14px
+    }
+    .card{background:rgba(8,15,29,.82);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 24px 50px rgba(0,0,0,.22)}
+    .chat{padding:26px}
+    .msg{padding:14px 16px;border-radius:16px;margin:10px 0;max-width:88%;font-size:16px}
+    .client{background:#19273d;margin-left:auto}
+    .bot{background:#0c5034}
+    .section{padding:28px 0}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .feature h3,.step h3{margin:0 0 8px;font-size:22px}
+    .feature p,.step p{font-size:16px;color:#c8d4e3;margin:0}
+    .pricebox{
+      display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px
+    }
+    .price-item{
+      background:linear-gradient(180deg,rgba(13,23,41,.96),rgba(6,14,28,.96));
+      border:1px solid #1f8050;border-radius:20px;padding:24px
+    }
+    .price-label{font-size:18px;color:#d9e7f7;margin-bottom:8px}
+    .price-value{font-size:40px;font-weight:900;color:var(--accent)}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .step-num{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#12311e;color:var(--accent);font-weight:800;margin-bottom:12px}
+    .contact{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:stretch}
+    ul.clean{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+    ul.clean li{padding-left:24px;position:relative;color:#d5deea}
+    ul.clean li::before{content:"•";position:absolute;left:8px;color:var(--accent);font-weight:900}
+    footer{padding:28px 0 0;color:#8ca0bb;font-size:14px}
+    @media(max-width:900px){
+      .hero,.contact,.steps,.pricebox,.grid{grid-template-columns:1fr}
+      h1{font-size:40px}
+      h2{font-size:28px}
+      .topbar{position:static;flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="topbar">
+      <div>
+        <div class="brand">AI-<span>администратор</span> для бизнеса</div>
+        <div class="mini">Пермь • Telegram • личный выезд по городу</div>
+      </div>
+      <a class="btn" href="https://t.me/dota2_brood" target="_blank" rel="noopener">Написать в Telegram</a>
+    </div>
+
+    <section class="hero">
+      <div>
+        <div class="hero-badges">
+          <span class="badge">Барбершопы</span>
+          <span class="badge">Салоны красоты</span>
+          <span class="badge">Локальные услуги</span>
+        </div>
+        <h1>Настрою <span>AI-администратора</span> в Telegram для вашего бизнеса в Перми</h1>
+        <p>AI-администратор отвечает клиентам, собирает заявки, помогает с записью на услуги, напоминает о визите и передаёт сложные вопросы владельцу.</p>
+        <p><strong>Я нахожусь в Перми и при необходимости могу приехать лично</strong>, чтобы обсудить задачу, показать демо и помочь с подключением.</p>
+        <div class="chips">
+          <span class="chip">Настройка — 1 500 ₽</span>
+          <span class="chip">Поддержка — 500 ₽ / месяц</span>
+          <span class="chip">Связь: @dota2_brood</span>
+        </div>
+        <a class="btn" href="https://t.me/dota2_brood" target="_blank" rel="noopener">Получить бесплатное демо</a>
+        <a class="btn ghost" href="#contact">Узнать подробнее</a>
+      </div>
+
+      <div class="card chat">
+        <div class="msg client">Здравствуйте. Сколько стоит мужская стрижка и есть ли запись на завтра?</div>
+        <div class="msg bot">Здравствуйте! Мужская стрижка — от 700 ₽. Свободные окна есть завтра в 11:00 и 16:30. Подсказать подробнее и принять заявку?</div>
+        <div class="msg client">Да, хочу на 16:30</div>
+        <div class="msg bot">Отлично. Напишите имя и номер телефона или Telegram — я передам заявку владельцу.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Возможности AI-администратора</h2>
+      <div class="grid">
+        <div class="card feature"><h3>Ответы клиентам в Telegram</h3><p>Отвечает на входящие сообщения быстро и без задержек, даже когда вы заняты.</p></div>
+        <div class="card feature"><h3>Сбор контактов и заявок</h3><p>Собирает имя, телефон, Telegram, услугу и удобное время для записи.</p></div>
+        <div class="card feature"><h3>Запись на услуги</h3><p>Помогает клиенту выбрать время и формирует заявку на запись.</p></div>
+        <div class="card feature"><h3>Ответы на частые вопросы</h3><p>Цены, адрес, график работы, список услуг, подготовка к визиту и другие популярные вопросы.</p></div>
+        <div class="card feature"><h3>Напоминания о визите</h3><p>Помогает сократить пропуски и забытые записи, отправляя напоминания клиентам.</p></div>
+        <div class="card feature"><h3>Передача сложных запросов</h3><p>Если вопрос нестандартный, заявка сразу передаётся владельцу или администратору.</p></div>
+        <div class="card feature"><h3>Сбор отзывов</h3><p>После оказания услуги можно автоматически попросить клиента оставить отзыв.</p></div>
+        <div class="card feature"><h3>Учёт обращений</h3><p>Все обращения можно фиксировать в таблице или CRM, чтобы ничего не потерять.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Стоимость</h2>
+      <div class="pricebox">
+        <div class="price-item">
+          <div class="price-label">Разовая настройка</div>
+          <div class="price-value">1 500 ₽</div>
+          <p>Подключение, базовая логика ответов, сбор заявок, настройка сценариев и запуск.</p>
+        </div>
+        <div class="price-item">
+          <div class="price-label">Поддержка</div>
+          <div class="price-value">500 ₽ / месяц</div>
+          <p>Обновления, помощь, правки текстов, поддержка сценариев и сопровождение.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Как проходит работа</h2>
+      <div class="steps">
+        <div class="card step">
+          <div class="step-num">1</div>
+          <h3>Созваниваемся или встречаемся</h3>
+          <p>Вы описываете свой бизнес, а я показываю, как AI-администратор будет работать именно у вас. Если вы в Перми — могу приехать лично.</p>
+        </div>
+        <div class="card step">
+          <div class="step-num">2</div>
+          <h3>Настраиваю систему</h3>
+          <p>Подключаю Telegram, настраиваю сценарии ответов, сбор заявок и передачу сложных вопросов.</p>
+        </div>
+        <div class="card step">
+          <div class="step-num">3</div>
+          <h3>Запускаем и поддерживаем</h3>
+          <p>После запуска помогаю с правками, обновлениями и поддержкой, чтобы система работала стабильно.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="contact">
+        <div class="card">
+          <h2>Почему это удобно</h2>
+          <ul class="clean">
+            <li>Клиенты получают быстрый ответ, даже когда вы заняты.</li>
+            <li>Меньше потерянных заявок из Telegram.</li>
+            <li>Можно принимать обращения в нерабочее время.</li>
+            <li>Вы сами решаете, когда подключаться лично к диалогу.</li>
+            <li>Есть возможность личной встречи в Перми.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Связаться со мной</h2>
+          <p><strong>Telegram:</strong> <a href="https://t.me/dota2_brood" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">@dota2_brood</a></p>
+          <p><strong>Город:</strong> Пермь</p>
+          <p><strong>Формат:</strong> онлайн и личный выезд по Перми</p>
+          <p class="muted">Напишите мне в Telegram — покажу демо, объясню, как всё работает, и при необходимости договоримся о личной встрече.</p>
+          <a class="btn" href="https://t.me/dota2_brood" target="_blank" rel="noopener">Написать @dota2_brood</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      AI-администратор для локального бизнеса в Перми • Telegram для связи: @dota2_brood • Возможен личный выезд.
+    </footer>
+  </main>
+</body>
+</html>
